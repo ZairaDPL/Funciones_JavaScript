@@ -11,8 +11,20 @@ function agregarLibro(titulo) {
     librosLeidos.push(titulo);
 }
 
-let libro = prompt('Ingresa el nombre del libro que leiste');
-agregarLibro(libro);
+agregarLibro('El principito');
+agregarLibro('Los ojos de mi princesa');
+agregarLibro('Las mil y una noche');
+agregarLibro('Bajo la misma estrella');
+agregarLibro('Yo te invente');
 
 //impresion de prueba
-console.log(librosLeidos);
+// console.log(librosLeidos);
+
+function mostrarLibrosLeidos(librosL) {
+    for (let index = 0; index < librosL.length; index++) {
+        console.log(index+1, librosL[index]);   
+    }
+}
+
+console.log('Tu lista de libros leidos');
+mostrarLibrosLeidos(librosLeidos);
